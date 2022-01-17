@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scratch off Reveal Content</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="content">
+            <h2>Scratch-Off Reveal Content Effects</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, voluptatem. Architecto dicta id, harum rem error aliquid eveniet, assumenda eaque hic dolor ullam. Corrupti dolore voluptate repellendus deleniti aspernatur officia earum corporis, fugit similique consequatur delectus! Similique veniam iusto praesentium tenetur nulla commodi sequi dolores cupiditate facilis cumque sapiente reprehenderit eligendi id nesciunt illo, inventore aliquid ad nobis sunt. Qui non dolore doloremque, aliquid repellendus nisi ipsa optio. Sint alias ratione fuga veritatis cumque repellendus iure debitis harum consequuntur eum nostrum a excepturi nemo nam molestias, eveniet libero nesciu</p>
+        </div>
+    </section>
+    <script src="p5.min.js"></script>
+    <script>
+        function setup(){
+            createCanvas(windowWidth,windowHeight);
+        }
+
+        function draw(){
+            strokeWeight(50);
+            if (mouseIsPressed == true){
+                fill(60);
+                line(mouseX,mouseY,pmouseX,pmouseY)
+            }
+        }
+    </script>
+</body>
+</html>
